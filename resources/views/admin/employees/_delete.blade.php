@@ -1,0 +1,1 @@
+<form method="post" action="{{ route('admin.employees.records.destroy', [$employee, $kind, $id]) }}" class="actions" onsubmit="return confirm('Remove this entry?')">@csrf @method('delete')<button class="btn btn-sm btn-danger" aria-label="Remove">✕</button></form>
